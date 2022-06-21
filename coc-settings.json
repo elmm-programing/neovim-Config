@@ -1,0 +1,76 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "c#",
+    "markdown",
+    "graphql",
+    "html",
+    "yaml",
+    "json",
+    "python",
+    "ejs",
+    "hbs",
+    "java",
+    "javascript",
+    "typescript",
+    "typescriptreact"
+  ],
+  "yaml.schemas": {
+    "https://raw.githubusercontent.com/docker/compose/master/compose/config/config_schema_v2.0.json": "**/docker-compose*.yml"
+  },
+  "docker.enable": true,
+
+  //webpack
+  "coc-webpack.enable": true, // enable coc-webpack
+  "coc-webpack.disableWhenUseTypeCheck": true, // disable coc-webpack when use @type {import('webpack').Configuration} comment
+  "coc-webpack.trace.server": "off", // Trace level of coc-webpack
+  "omnisharp.version": "v.1.37.3",
+  "omnisharp.trace.server": "information",
+  "omnisharp.debug.server": true,
+  //Language server
+  "go.enable": true,
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"],
+      "initializationOptions": {
+        "usePlaceholders": true
+      }
+    }
+  },
+  //javascript
+  "typescript.suggest.enabled": true,
+  "typescript.validate.enable": true,
+  "typescript.suggest.paths": true,
+  "typescript.suggestionActions.enabled": true,
+  "typescript.format.enabled": true,
+  "typescript.suggest.autoImports": true,
+  "typescript.suggest.completeFunctionCalls": true,
+  "tsserver.enable": true,
+  "tsserver.enableJavascript": true,
+  //linter
+  "eslint.quiet": false,
+  "eslint.run": "onType",
+
+  //Java
+
+  "java.enabled": true,
+  "java.format.enabled": true,
+  "java.completion.enabled": true,
+  "java.autobuild.enabled": true,
+  "java.format.onType.enabled": true,
+  //C#
+  "omnisharp.trace.server": "information",
+  "omnisharp.debug.server": true,
+  "omnisharp.path": "/home/edwin/.cache/omnisharp-vim/omnisharp-roslyn/run",
+  //html
+  "html.enable": true,
+  "html.format.enable": true,
+  "html.autoClosingTags": true,
+  "html.suggest.html5": true,
+  "html.validate.html": true,
+  "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"],
+  "java.format.settings.url": "/home/edwin/.config/coc/extensions/node_modules/redhat.java/eclipse-formatter.xml",
+  "java.errors.incompleteClasspath.severity": "ignore"
+}
