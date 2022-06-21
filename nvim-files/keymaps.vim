@@ -7,15 +7,18 @@ nmap <leader>w :w<CR>
 nmap <Leader>q :q<CR>
 nmap <Leader>wq :wq<CR>
 nmap <Leader>nt :NERDTreeFind<CR>
-nmap <Leader>fzf :FZF<CR>
 nmap <Leader>rgo :! go run 
 inoremap kj <Esc>
 cnoremap kj <Esc>
-map <C-f> :Files<CR>
-map <leader>b :Buffers<CR>
-nnoremap <leader>g :Rg<CR>
-nnoremap <leader>t :Tags<CR>
-nnoremap <leader>m :Marks<CR>
+"fzf keymaps
+nnoremap <silent>fg :Rg<CR>
+nnoremap <silent>fa :Ag<CR>
+nnoremap <silent>fb :Buffers<CR>
+nnoremap <silent>fl :BLines<CR>
+nnoremap <silent>fc :Commands<CR>
+nnoremap <S-l> :bnext<CR>
+nnoremap <S-h> :bprevious<CR>
+nmap <Leader>t :Vista coc<CR>
 nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
 nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
 nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>
